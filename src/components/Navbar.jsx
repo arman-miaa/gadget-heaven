@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
       <div
         className={`${
-          location.pathname === "/" ? "bg-[#9538E2] text-white" : "bg-white"
+          location.pathname === "/" ? "bg-[#9538E2] rounded-t-xl text-white" : "bg-white"
         }`}
       >
         <div className="navbar mt-8">
