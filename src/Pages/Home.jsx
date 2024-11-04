@@ -7,20 +7,20 @@ const Home = () => {
           <h1 className="font-bold text-5xl ">
             Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories
           </h1>
-          <p>
+          <p className="my-6">
             Explore the latest gadgets that will take your experience to <br />{" "}
             the next level. From smart devices to the coolest accessories, we
             have it all!
           </p>
-          <button className="btn">Shop Now</button>
+          <button className="btn rounded-2xl mb-6 text-[#9538E2]">Shop Now</button>
 
           <Hero></Hero>
         </div>
-        <div className="mb-16 w-full  -mt-8 sticky">
-          <div className="border-2 w-1/2 mx-auto p-4 rounded-xl">
+        <div className="mb-16 w-full  -mt-28 sticky">
+          <div className="border-2 w-3/4 mx-auto p-4 rounded-xl">
             <img
               className=" w-full mx-auto rounded-2xl  text-center  h-[363px] "
-              src="/public/banner.jpg"
+              src="/banner.jpg"
               alt=""
             />
           </div>
