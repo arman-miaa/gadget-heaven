@@ -18,7 +18,7 @@ const WishList = () => {
 
     // Update state to reflect the removal
       setWishList(updatedWishList);
-      window.location.reload();
+    //   window.location.reload();
   };
 
   return (

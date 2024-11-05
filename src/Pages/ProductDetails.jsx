@@ -36,7 +36,7 @@ const ProductDetails = () => {
    // Debugging: Log the updated cart
    console.log("Product added to cart:", product);
    console.log("Updated cart:", updatedCart);
-   window.location.reload();
+  //  window.location.reload();
  };
 
 
@@ -51,7 +51,6 @@ const ProductDetails = () => {
      // Debugging: Log the updated cart
      console.log("Product added to wish:", product);
      console.log("Updated wish:", updatedCart);
-     window.location.reload();
     
       
   };
