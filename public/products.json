@@ -1,76 +1,8 @@
 [
   {
-    "product_id": "P001",
-    "product_title": "Apple iPhone 15 Pro Max",
-    "product_image": "https://example.com/iphone15promax.jpg",
-    "category": "Smartphones",
-    "price": 1299,
-    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
-    "specification": [
-      "6.7-inch Super Retina XDR display",
-      "A17 Bionic chip",
-      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
-      "LiDAR Scanner",
-      "Up to 2TB storage"
-    ],
-    "availability": true,
-    "rating": 4.8
-  },
-  {
-    "product_id": "P002",
-    "product_title": "Samsung Galaxy S23 Ultra",
-    "product_image": "https://example.com/galaxys23ultra.jpg",
-    "category": "Smartphones",
-    "price": 1199,
-    "description": "Capture incredible detail and clarity with the Samsung Galaxy S23 Ultra.",
-    "specification": [
-      "6.8-inch Dynamic AMOLED 2X display",
-      "Snapdragon 8 Gen 2",
-      "Quad-camera system (200MP Main, 12MP Ultrawide, 10MP Telephoto)",
-      "5000mAh battery",
-      "1TB storage option"
-    ],
-    "availability": true,
-    "rating": 4.7
-  },
-  {
-    "product_id": "P003",
-    "product_title": "Sony WH-1000XM5 Wireless Headphones",
-    "product_image": "https://example.com/wh1000xm5.jpg",
-    "category": "Audio",
-    "price": 399,
-    "description": "Immerse yourself in sound with the industry-leading Sony WH-1000XM5 headphones.",
-    "specification": [
-      "Noise cancellation",
-      "30 hours of battery life",
-      "Touch controls",
-      "Bluetooth 5.2",
-      "Foldable design"
-    ],
-    "availability": true,
-    "rating": 4.6
-  },
-  {
-    "product_id": "P004",
-    "product_title": "Apple MacBook Pro 14-inch",
-    "product_image": "https://example.com/macbookpro14.jpg",
-    "category": "Laptops",
-    "price": 1999,
-    "description": "Powerful performance with Apple's M2 Pro chip on the 14-inch MacBook Pro.",
-    "specification": [
-      "14-inch Liquid Retina XDR display",
-      "M2 Pro chip",
-      "16GB RAM",
-      "512GB SSD",
-      "Thunderbolt 4 ports"
-    ],
-    "availability": true,
-    "rating": 4.9
-  },
-  {
-    "product_id": "P005",
-    "product_title": "Dell XPS 13",
-    "product_image": "https://example.com/dellxps13.jpg",
+    "id": 1,
+    "title": "Dell XPS 13",
+    "image": "https://example.com/dellxps13.jpg",
     "category": "Laptops",
     "price": 1099,
     "description": "Elegant design meets high performance with the Dell XPS 13.",
@@ -85,88 +17,212 @@
     "rating": 4.5
   },
   {
-    "product_id": "P006",
-    "product_title": "Nintendo Switch OLED",
-    "product_image": "https://example.com/switcholed.jpg",
-    "category": "Gaming",
-    "price": 349,
-    "description": "Enjoy enhanced visuals and immersive gaming on the Nintendo Switch OLED.",
+    "id": 2,
+    "title": "Apple iPhone 15 Pro Max",
+    "image": "https://example.com/iphone15promax.jpg",
+    "category": "iPhones",
+    "price": 1299,
+    "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
     "specification": [
-      "7-inch OLED display",
-      "64GB internal storage",
-      "Detachable Joy-Con controllers",
-      "Enhanced audio",
-      "Dock with LAN port"
-    ],
-    "availability": true,
-    "rating": 4.7
-  },
-  {
-    "product_id": "P007",
-    "product_title": "Canon EOS R5 Mirrorless Camera",
-    "product_image": "https://example.com/eosr5.jpg",
-    "category": "Cameras",
-    "price": 3899,
-    "description": "Capture stunning photos and videos with the Canon EOS R5.",
-    "specification": [
-      "45MP Full-frame CMOS sensor",
-      "8K video recording",
-      "Dual Pixel AF",
-      "5-axis IBIS",
-      "Up to 12fps"
+      "6.7-inch Super Retina XDR display",
+      "A17 Bionic chip",
+      "Triple-camera system (48MP Main, 12MP Telephoto, 12MP Ultrawide)",
+      "LiDAR Scanner",
+      "Up to 2TB storage"
     ],
     "availability": true,
     "rating": 4.8
   },
   {
-    "product_id": "P008",
-    "product_title": "Samsung QLED 65-inch TV",
-    "product_image": "https://example.com/qled65.jpg",
-    "category": "TVs",
-    "price": 1799,
-    "description": "Experience cinematic quality at home with the Samsung QLED 65-inch TV.",
+    "id": 3,
+    "title": "Samsung Galaxy Watch 5 Pro",
+    "image": "https://example.com/galaxywatch5pro.jpg",
+    "category": "Smart Watches",
+    "price": 449,
+    "description": "Stay fit and connected with the Samsung Galaxy Watch 5 Pro.",
     "specification": [
-      "65-inch 4K UHD QLED display",
-      "Quantum Processor 4K",
-      "HDR10+",
-      "Dolby Atmos",
-      "Smart TV with Alexa support"
+      "1.4-inch Super AMOLED display",
+      "Up to 80 hours battery life",
+      "Advanced sleep tracking",
+      "GPS and health sensors",
+      "5ATM water resistance"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "title": "HP Spectre x360",
+    "image": "https://example.com/hpspectrex360.jpg",
+    "category": "Laptops",
+    "price": 1399,
+    "description": "Experience versatility and power with the HP Spectre x360 convertible laptop.",
+    "specification": [
+      "13.5-inch OLED display",
+      "Intel Core i7 processor",
+      "16GB RAM",
+      "1TB SSD",
+      "Intel Iris Xe graphics"
+    ],
+    "availability": true,
+    "rating": 4.8
+  },
+  {
+    "id": 5,
+    "title": "ASUS ROG Zephyrus G14",
+    "image": "https://example.com/asuszephyrusg14.jpg",
+    "category": "Laptops",
+    "price": 1599,
+    "description": "High-performance gaming with the ASUS ROG Zephyrus G14.",
+    "specification": [
+      "14-inch QHD display",
+      "AMD Ryzen 9 processor",
+      "16GB RAM",
+      "1TB SSD",
+      "NVIDIA GeForce RTX 3060"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "id": 6,
+    "title": "Apple iPhone 14",
+    "image": "https://example.com/iphone14.jpg",
+    "category": "iPhones",
+    "price": 999,
+    "description": "Classic design with modern capabilities in the iPhone 14.",
+    "specification": [
+      "6.1-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "Dual-camera system (12MP Main, 12MP Ultrawide)",
+      "Up to 1TB storage"
     ],
     "availability": true,
     "rating": 4.6
   },
   {
-    "product_id": "P009",
-    "product_title": "Logitech MX Master 3S Mouse",
-    "product_image": "https://example.com/mxmaster3s.jpg",
-    "category": "Accessories",
-    "price": 99,
-    "description": "Precision and comfort with the Logitech MX Master 3S wireless mouse.",
+    "id": 7,
+    "title": "Apple Watch Series 8",
+    "image": "https://example.com/applewatchseries8.jpg",
+    "category": "Smart Watches",
+    "price": 399,
+    "description": "Stay active and healthy with the Apple Watch Series 8.",
     "specification": [
-      "Ergonomic design",
-      "Customizable buttons",
-      "4000 DPI sensor",
-      "Bluetooth and USB connectivity",
-      "70-day battery life"
+      "Always-On Retina display",
+      "Advanced health monitoring",
+      "GPS and cellular",
+      "Water-resistant up to 50 meters",
+      "Up to 18 hours battery life"
     ],
     "availability": true,
     "rating": 4.8
   },
   {
-    "product_id": "P010",
-    "product_title": "Bose QuietComfort Earbuds II",
-    "product_image": "https://example.com/qcearbuds2.jpg",
-    "category": "Audio",
-    "price": 299,
-    "description": "Unmatched noise cancellation with the Bose QuietComfort Earbuds II.",
+    "id": 8,
+    "title": "Dell Inspiron 15",
+    "image": "https://example.com/dellinspiron15.jpg",
+    "category": "Laptops",
+    "price": 899,
+    "description": "A reliable laptop with essential features in the Dell Inspiron 15.",
     "specification": [
-      "Noise-cancelling",
-      "Up to 6 hours per charge",
-      "IPX4 water resistance",
-      "Bluetooth 5.3",
-      "StayHear Max tips"
+      "15.6-inch FHD display",
+      "Intel Core i5 processor",
+      "8GB RAM",
+      "512GB SSD",
+      "Intel UHD Graphics"
+    ],
+    "availability": true,
+    "rating": 4.3
+  },
+  {
+    "id": 9,
+    "title": "Apple iPhone 13 Mini",
+    "image": "https://example.com/iphone13mini.jpg",
+    "category": "iPhones",
+    "price": 699,
+    "description": "Compact and powerful, the iPhone 13 Mini fits in the palm of your hand.",
+    "specification": [
+      "5.4-inch Super Retina XDR display",
+      "A15 Bionic chip",
+      "Dual-camera system (12MP Main, 12MP Ultrawide)",
+      "Up to 512GB storage"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "id": 10,
+    "title": "HP Envy 13",
+    "image": "https://example.com/hpenvy13.jpg",
+    "category": "Laptops",
+    "price": 1099,
+    "description": "Sleek and stylish, the HP Envy 13 is perfect for on-the-go professionals.",
+    "specification": [
+      "13.3-inch FHD display",
+      "Intel Core i7 processor",
+      "8GB RAM",
+      "512GB SSD",
+      "Intel Iris Xe graphics"
     ],
     "availability": true,
     "rating": 4.7
+  },
+  {
+    "id": 11,
+    "title": "Fitbit Versa 4",
+    "image": "https://example.com/fitbitversa4.jpg",
+    "category": "Smart Watches",
+    "price": 229,
+    "description": "Track your fitness and health goals with the Fitbit Versa 4.",
+    "specification": [
+      "1.58-inch AMOLED display",
+      "Heart rate monitor",
+      "Built-in GPS",
+      "6+ day battery life",
+      "Water-resistant to 50 meters"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "id": 12,
+    "title": "ASUS VivoBook S15",
+    "image": "https://example.com/asusvivobooks15.jpg",
+    "category": "Laptops",
+    "price": 799,
+    "description": "Budget-friendly and versatile, the ASUS VivoBook S15 is great for students.",
+    "specification": [
+      "15.6-inch FHD display",
+      "Intel Core i5 processor",
+      "8GB RAM",
+      "512GB SSD",
+      "Intel UHD Graphics"
+    ],
+    "availability": true,
+    "rating": 4.4
+  },
+
+
+  {
+    "id": 13,
+    "title": "",
+    "image": "",
+    "category": "",
+    "price": "",
+    "description": "",
+    "specification": [],
+    "availability": null,
+    "rating": null
+  },
+  {
+    "id": 14,
+    "title": "",
+    "image": "",
+    "category": "",
+    "price": "",
+    "description": "",
+    "specification": [],
+    "availability": null,
+    "rating": null
   }
 ]

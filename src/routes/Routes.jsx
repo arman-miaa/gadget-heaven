@@ -7,6 +7,8 @@ import Contact from "../Pages/Contact";
 import ProductDetails from "../Pages/ProductDetails";
 import WishList from "../components/WishList";
 import CartDashboard from "../components/CartDashboard";
+import Products from "../components/Products";
+import Carts from "../components/Carts";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +18,21 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        loader: () => fetch("../categories.json"),
+        children: [
+          {
+            path: "/",
+            element: <Carts />,
+            loader: () => fetch("../products.json"),
+          },
+          {
+            path: "/category/:category",
+            element: <Carts></Carts>,
+            loader: () => fetch("../products.json"),
+          },
+        ],
       },
+
       {
         path: "/Statistics",
         element: <Statistics></Statistics>,
@@ -30,7 +46,7 @@ const router = createBrowserRouter([
             element: <CartDashboard></CartDashboard>,
           },
           {
-            path:'dashboard',
+            path: "dashboard",
             element: <CartDashboard></CartDashboard>,
           },
 

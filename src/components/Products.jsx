@@ -7,7 +7,7 @@ const Products = ({ categories }) => {
     console.log(categories);
     return (
       <div className='border-2 flex gap-4'>
-        {/* <h1>Products pages</h1> */}
+        <h1>Products pages</h1>
         <div>
           <Categories categories={categories}></Categories>
         </div>
