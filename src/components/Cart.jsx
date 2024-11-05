@@ -7,8 +7,8 @@ const Cart = ({ cart }) => {
     return (
       <div>
         <div className="card bg-base-100 p-4 shadow-xl">
-          <figure className='max-w-[290px] h-[180px] '>
-            <img className='w-full border-2 h-full object-contain overflow-hidden'
+          <figure className=' h-[200px] '>
+            <img className='w-full border-2 rounded-xl h-full object-contain overflow-hidden'
               src={image}
               alt="Product"
             />
