@@ -2,7 +2,7 @@ import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
 const Categories = ({ categories }) => {
-  console.log(categories);
+  // console.log(categories);
   return (
     <div className="">
       <div className="flex flex-col bg-white p-4 w-[220px]">

@@ -5,7 +5,7 @@ import Categories from "../components/Categories";
 
 const Home = () => {
    const categories = useLoaderData();
-   console.log(categories);
+  //  console.log(categories);
     return (
       <div className="bg-[#F7F7F7]">
         <div className="bg-[#9538E2] relative  pb-32 text-white -mt-[48px] text-center rounded-b-xl">

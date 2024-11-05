@@ -7,14 +7,14 @@ const Carts = () => {
     const data = useLoaderData();
     console.log(data);
     const {category} = useParams();
-    console.log(category);
+    // console.log(category);
     const [carts, useCarts] = useState([data]);
     
 
     useEffect(() => {
            if (category) {
              const filterByCategory = [...data].filter(
-               (coffee) => coffee.category === category
+               (cart) => cart.category === category
              );
              useCarts(filterByCategory);
            } else {
