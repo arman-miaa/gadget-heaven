@@ -3,11 +3,16 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 // console.log(location);
 
 const Navbar = () => {
-    const location = useLocation();
+  const location = useLocation();
+   const cartItem = JSON.parse(localStorage.getItem("cart"));
+   const wishItem = JSON.parse(localStorage.getItem("wish"));
+   console.log(cartItem);
     return (
       <div
         className={`${
-          location.pathname === "/" ? "bg-[#9538E2] rounded-t-xl px-6 text-white" : "bg-white"
+          location.pathname === "/"
+            ? "bg-[#9538E2] rounded-t-xl px-6 text-white"
+            : "bg-white"
         }`}
       >
         <div className="navbar mt-8">
@@ -70,8 +75,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div className="navbar-end text-2xl gap-2">
-            <i className="fa-regular fa-heart"></i>
+            {cartItem?.length}
             <i className="fa-solid fa-cart-shopping"></i>
+            {wishItem?.length}
+            <i className="fa-regular fa-heart"></i>
           </div>
         </div>
       </div>
