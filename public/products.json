@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Dell XPS 13",
-    "image": "https://example.com/dellxps13.jpg",
+    "image": "https://i.ibb.co.com/JrBVpDH/Dell-XPS-9380-Full-Review.jpg",
     "category": "Laptops",
     "price": 1099,
     "description": "Elegant design meets high performance with the Dell XPS 13.",
@@ -18,8 +18,8 @@
   },
   {
     "id": 2,
-    "title": "Apple iPhone 15 Pro Max",
-    "image": "https://example.com/iphone15promax.jpg",
+    "title": " iPhone 15 Pro Max",
+    "image": "https://i.ibb.co.com/wYTTCGP/Apple-i-Phone-15-Pro-Max-blue-titanium-featured-image-packshot-review-1024x691.jpg",
     "category": "iPhones",
     "price": 1299,
     "description": "Experience the ultimate smartphone with the iPhone 15 Pro Max.",
@@ -35,8 +35,8 @@
   },
   {
     "id": 3,
-    "title": "Samsung Galaxy Watch 5 Pro",
-    "image": "https://example.com/galaxywatch5pro.jpg",
+    "title": "Apple Watch 7",
+    "image": "https://i.ibb.co.com/QCFBCJZ/Watch-9-Ocean-Band-2-6490.jpg",
     "category": "Smart Watches",
     "price": 449,
     "description": "Stay fit and connected with the Samsung Galaxy Watch 5 Pro.",
@@ -53,7 +53,7 @@
   {
     "id": 4,
     "title": "HP Spectre x360",
-    "image": "https://example.com/hpspectrex360.jpg",
+    "image": "https://i.ibb.co.com/5xJ782q/Hp-9-1.webp",
     "category": "Laptops",
     "price": 1399,
     "description": "Experience versatility and power with the HP Spectre x360 convertible laptop.",
@@ -69,8 +69,8 @@
   },
   {
     "id": 5,
-    "title": "ASUS ROG Zephyrus G14",
-    "image": "https://example.com/asuszephyrusg14.jpg",
+    "title": "ASUS Zephyrus",
+    "image": "https://i.ibb.co.com/cg6fyfm/Asus-ROG-Zephyrus-9-1.webp",
     "category": "Laptops",
     "price": 1599,
     "description": "High-performance gaming with the ASUS ROG Zephyrus G14.",
@@ -87,7 +87,7 @@
   {
     "id": 6,
     "title": "Apple iPhone 14",
-    "image": "https://example.com/iphone14.jpg",
+    "image": "https://i.ibb.co.com/0cDZY5C/3410-42224.jpg",
     "category": "iPhones",
     "price": 999,
     "description": "Classic design with modern capabilities in the iPhone 14.",
@@ -102,8 +102,8 @@
   },
   {
     "id": 7,
-    "title": "Apple Watch Series 8",
-    "image": "https://example.com/applewatchseries8.jpg",
+    "title": "Apple Watch 6",
+    "image": "https://i.ibb.co.com/fNzRSjS/Apple-watch-series-6-stainless-steel-case-gmt-watchface-09152020-carousel-jpg-large.jpg",
     "category": "Smart Watches",
     "price": 399,
     "description": "Stay active and healthy with the Apple Watch Series 8.",
@@ -120,7 +120,7 @@
   {
     "id": 8,
     "title": "Dell Inspiron 15",
-    "image": "https://example.com/dellinspiron15.jpg",
+    "image": "https://i.ibb.co.com/9cPyqTv/61-SDITIPUq-L-AC-SL1495.jpg",
     "category": "Laptops",
     "price": 899,
     "description": "A reliable laptop with essential features in the Dell Inspiron 15.",
@@ -136,8 +136,8 @@
   },
   {
     "id": 9,
-    "title": "Apple iPhone 13 Mini",
-    "image": "https://example.com/iphone13mini.jpg",
+    "title": " iPhone 13 Mini",
+    "image": "https://i.ibb.co.com/0J2LBvD/Apple-i-Phone-13-Mini-128-GB-Fully-Unlocked-Midnight-Refurbished-Scratch-and-Dent-bff13c90-f475-487c.webp",
     "category": "iPhones",
     "price": 699,
     "description": "Compact and powerful, the iPhone 13 Mini fits in the palm of your hand.",
@@ -153,7 +153,7 @@
   {
     "id": 10,
     "title": "HP Envy 13",
-    "image": "https://example.com/hpenvy13.jpg",
+    "image": "https://i.ibb.co.com/zbVky72/HP-Spectre-16-F1013-DX-in-BD.webp",
     "category": "Laptops",
     "price": 1099,
     "description": "Sleek and stylish, the HP Envy 13 is perfect for on-the-go professionals.",
@@ -170,7 +170,7 @@
   {
     "id": 11,
     "title": "Fitbit Versa 4",
-    "image": "https://example.com/fitbitversa4.jpg",
+    "image": "https://i.ibb.co.com/B2rvpTP/61-Uicbb64-GL.jpg",
     "category": "Smart Watches",
     "price": 229,
     "description": "Track your fitness and health goals with the Fitbit Versa 4.",
@@ -186,8 +186,8 @@
   },
   {
     "id": 12,
-    "title": "ASUS VivoBook S15",
-    "image": "https://example.com/asusvivobooks15.jpg",
+    "title": "ASUS VivoBook",
+    "image": "https://i.ibb.co.com/0XdRKWV/w300.png",
     "category": "Laptops",
     "price": 799,
     "description": "Budget-friendly and versatile, the ASUS VivoBook S15 is great for students.",
@@ -200,29 +200,7 @@
     ],
     "availability": true,
     "rating": 4.4
-  },
-
-
-  {
-    "id": 13,
-    "title": "",
-    "image": "",
-    "category": "",
-    "price": "",
-    "description": "",
-    "specification": [],
-    "availability": null,
-    "rating": null
-  },
-  {
-    "id": 14,
-    "title": "",
-    "image": "",
-    "category": "",
-    "price": "",
-    "description": "",
-    "specification": [],
-    "availability": null,
-    "rating": null
   }
+
+
 ]

@@ -1,13 +1,31 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = ({ cart }) => {
     console.log(cart);
-    const {category } = cart;
+    const {title,image,price,id } = cart;
     return (
-        <div>
-            <h1>Cart showing {cart.length}</h1>
-            <p>{category}</p>
+      <div>
+        <div className="card bg-base-100 p-4 shadow-xl">
+          <figure className='max-w-[290px] h-[180px] '>
+            <img className='w-full border-2 h-full object-contain overflow-hidden'
+              src={image}
+              alt="Product"
+            />
+          </figure>
+          <div className="">
+            <h2 className="text-2xl font-semibold mt-4">{title}</h2>
+            <p className="text-xl font-medium text-[#09080F99]">
+              Price: ${price}
+            </p>
+            <div className="card-actions">
+              <Link to={`${id}`} className="text-[#9538E2] border-[1px] py-[4px] px-4 mt-4 rounded-full border-[#9538E2]">
+                View Details
+              </Link>
+            </div>
+          </div>
         </div>
+      </div>
     );
 };
 
