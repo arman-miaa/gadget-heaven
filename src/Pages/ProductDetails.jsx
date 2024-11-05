@@ -36,24 +36,31 @@ const ProductDetails = () => {
    // Debugging: Log the updated cart
    console.log("Product added to cart:", product);
    console.log("Updated cart:", updatedCart);
-  //  window.location.reload();
+   window.location.reload();
  };
 
 
   
-  const addToWishlist = (product) => {
-     const updatedCart = [...wishList, product];
-     setWishList(updatedCart);
+ const addToWishlist = (product) => {
+   // Retrieve existing wishlist items
+   const existingWish = JSON.parse(localStorage.getItem("wish")) || [];
 
-     // Update localStorage with the new cart array
-     localStorage.setItem("wish", JSON.stringify(updatedCart));
+   // Check if the product is already in the wishlist
+   const isProductInWishlist = existingWish.some(
+     (item) => item.id === product.id
+   );
 
-     // Debugging: Log the updated cart
-     console.log("Product added to wish:", product);
-     console.log("Updated wish:", updatedCart);
-    
-      
-  };
+   if (!isProductInWishlist) {
+     // If the product is not already in the wishlist, add it
+     const updatedWishlist = [...existingWish, product];
+     localStorage.setItem("wish", JSON.stringify(updatedWishlist));
+     setWishList(updatedWishlist);
+   } else {
+     // Notify the user that the item is already in the wishlist
+     console.log("This item is already in your wishlist.");
+     alert("This item is already in your wishlist.");
+   }
+ };
 
   return (
     <div>
