@@ -19,7 +19,7 @@ const Cart = ({ cart }) => {
               Price: ${price}
             </p>
             <div className="card-actions">
-              <Link to={`detail/${id}`} className="text-[#9538E2] border-[1px] py-[4px] px-4 mt-4 rounded-full border-[#9538E2]">
+              <Link to={`/detail/${id}`} className="text-[#9538E2] border-[1px] py-[4px] px-4 mt-4 rounded-full border-[#9538E2]">
                 View Details
               </Link>
             </div>

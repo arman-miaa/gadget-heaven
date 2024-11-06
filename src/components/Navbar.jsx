@@ -6,14 +6,13 @@ const Navbar = () => {
   const [cartCount, setCartCount] = useState(0);
   const [wishCount, setWishCount] = useState(0);
 
+
   useEffect(() => {
-    // Initial load from localStorage
     const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
     const wishItems = JSON.parse(localStorage.getItem("wish")) || [];
     setCartCount(cartItems.length);
     setWishCount(wishItems.length);
 
-    // Event listeners for updates
     const handleCartUpdate = () => {
       const cartItems = JSON.parse(localStorage.getItem("cart")) || [];
       setCartCount(cartItems.length);
@@ -27,7 +26,6 @@ const Navbar = () => {
     window.addEventListener("cartUpdated", handleCartUpdate);
     window.addEventListener("wishUpdated", handleWishUpdate);
 
-    // Cleanup listeners on component unmount
     return () => {
       window.removeEventListener("cartUpdated", handleCartUpdate);
       window.removeEventListener("wishUpdated", handleWishUpdate);
@@ -98,10 +96,20 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end text-2xl gap-2">
-          {cartCount}
-          <i className="fa-solid fa-cart-shopping"></i>
-          {wishCount}
-          <i className="fa-regular fa-heart"></i>
+          <Link to="/dashboard" className="relative mr-2">
+            <i className="fa-solid fa-cart-arrow-down text-xl"></i>
+            <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+              {cartCount}
+            </span>
+          </Link>
+
+          <button className="relative">
+            <i className="fa-regular fa-heart text-xl"></i>
+            <span className="absolute -top-2 -right-2 bg-red-500 rounded-full text-xs w-5 h-5 flex items-center justify-center">
+              {wishCount}
+            </span>
+            
+          </button>
         </div>
       </div>
     </div>
