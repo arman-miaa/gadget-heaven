@@ -49,7 +49,7 @@ const handleRemove = (id) => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold"> Wishlist</h1>
+      <h1 className="text-2xl font-bold ml-10"> Wishlist</h1>
 
       {wishList.map((cart) => {
         const { title, image, price, id, description } = cart;
