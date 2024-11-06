@@ -4,6 +4,7 @@ import CartDashboard from "../components/CartDashboard";
 
 const Dashboard = () => {
   const location = useLocation();
+  const isCartActive = location.pathname === "/dashboard";
     return (
       <div>
         <div className="bg-[#9538E2] relative py-6   text-white -mt-[48px] text-center ">
@@ -15,14 +16,25 @@ const Dashboard = () => {
           </p>
           <div className="space-x-4">
             <NavLink
-              to='dashboard'
-              className="border-2 py-1 px-6 rounded-full"
+              to="dashboard"
+              className={({ isActive }) =>
+                `border-2 py-1 px-6 rounded-full ${
+                  isActive ? "bg-white text-black" : "bg-transparent"
+                }`
+              }
             >
               Cart
             </NavLink>
-            <Link to="wishlist" className="border-2 py-1 px-6 rounded-full">
-              Whislist
-            </Link>
+            <NavLink
+              to="wishlist"
+              className={({ isActive }) =>
+                `border-2 py-1 px-6 rounded-full ${
+                  isActive ? "bg-white text-black" : "bg-transparent"
+                }`
+              }
+            >
+              Wishlist
+            </NavLink>
           </div>
 
           <Hero></Hero>
