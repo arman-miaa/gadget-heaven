@@ -54,37 +54,32 @@ const handleRemove = (id) => {
       {wishList.map((cart) => {
         const { title, image, price, id, description } = cart;
         return (
-          <div
-            key={id}
-            className="card bg-base-100 p-4 flex flex-row shadow-xl"
-          >
-            <figure className="h-[200px]">
-              <img
-                className="w-full border-2 rounded-xl h-full object-contain overflow-hidden"
-                src={image}
-                alt="Product"
-              />
-            </figure>
-            <div>
-              <h2 className="text-2xl font-semibold mt-4">{title}</h2>
-              <p>{description}</p>
-              <p className="text-xl font-medium text-[#09080F99]">
-                Price: ${price}
-              </p>
+          <div className="">
+            <div
+              key={id}
+              className="card  p-4 flex bg-[#F7F7F7] items-center gap-8 flex-row border-2 mt-6 mx-8"
+            >
+              <figure className="h-[150px] w-[250px]">
+                <img
+                  className="w-full border-2  rounded-2xl  h-full object-contain overflow-hidden"
+                  src={image}
+                  alt="Product"
+                />
+              </figure>
+              <div>
+                <h2 className="text-2xl font-semibold mt-4">{title}</h2>
+                <p>{description}</p>
+                <p className="text-xl font-medium text-[#09080F99]">
+                  Price: ${price}
+                </p>
 
-              <button
-                onClick={() => handleRemove(id)}
-                className="bg-red-500 text-white rounded-full py-1 px-3 mt-2"
-              >
-                Delete
-              </button>
-
-              <button
-                onClick={() => addToCart(cart)}
-                className="bg-blue-500 text-white rounded-full py-1 px-3 mt-2 ml-4"
-              >
-                Add to Cart
-              </button>
+                <button
+                  onClick={() => addToCart(cart)}
+                  className="bg-blue-500 text-white rounded-full py-1 px-3 mt-2 ml-4"
+                >
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
         );
