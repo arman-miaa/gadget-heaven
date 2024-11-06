@@ -80,10 +80,11 @@ const addToWishlist = (product) => {
     <div>
       <div className="bg-[#9538E2] rounded-xl relative  pb-32 text-white -mt-[48px] text-center ">
         <h1 className="font-bold text-5xl pt-8 ">Product Details</h1>
-        <p className="my-6">
-          Explore the latest gadgets that will take your experience to <br />{" "}
-          the next level. From smart devices to the coolest accessories, we have
-          it all!
+        <p className="my-6 w-1/2 text-center mx-auto">
+          Discover the ultimate gadgets that redefine convenience and style.
+          From state-of-the-art devices to must-have accessories, Gadget Heaven
+          brings you technology that enhances every moment. Step into the future
+          with our innovative collection!
         </p>
 
         <Hero></Hero>
@@ -98,10 +99,13 @@ const addToWishlist = (product) => {
             <h3 className="text-3xl font-semibold">{title}</h3>
             <p className="text-xl font-semibold">Price:${price}</p>
             <button className="bg-[#309C081A] border-2 border-green-400 p-[4px] px-2 rounded-full">
-              <span className={product?.availability ? "text-green-500 px-4" : "text-red-500"}>
-  {product?.availability ? "In Stock" : "No"}
-</span>
-
+              <span
+                className={
+                  product?.availability ? "text-green-500 px-4" : "text-red-500"
+                }
+              >
+                {product?.availability ? "In Stock" : "No"}
+              </span>
             </button>
             <p className="text-xl text-[#09080F99]">{description}</p>
             <h3 className="text-xl font-bold">Specification:</h3>

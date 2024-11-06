@@ -8,10 +8,10 @@ const Contact = () => {
       <div>
         <div className="bg-[#9538E2] relative pt-12 pb-32 text-white  text-center -mt-8 rounded-xl">
           <h1 className="font-bold text-5xl ">Contact Us</h1>
-          <p className="my-6">
-            Explore the latest gadgets that will take your experience to <br />{" "}
-            the next level. From smart devices to the coolest accessories, we
-            have it all!
+          <p className="my-6 w-1/2 mx-auto">
+            Connect with us to discover the latest gadgets that will elevate
+            your experience. From innovative smart devices to top-notch
+            accessories, Gadget Heaven is here to bring you the best in tech!
           </p>
 
           <Hero></Hero>
@@ -30,34 +30,53 @@ const Contact = () => {
           <div className="hero-content flex-col lg:flex-row">
             <div className="text-center ">
               <i className="fa-regular fa-user text-8xl text-[#9538E2]"></i>
-              <h1 className="text-4xl font-bold">Contact Us on Social Media</h1>
+              <h1 className="text-4xl font-bold mt-8">Contact Us on Social Media</h1>
               <p className="py-6">
-                Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                assumenda excepturi exercitationem quasi. In deleniti eaque aut
-                repudiandae et a id nisi.
+                Stay connected with us for the latest updates and gadget
+                insights! Follow us across our social media channels and join
+                our community of tech enthusiasts.
               </p>
               <div className="flex space-x-4">
-  <a href="https://facebook.com" target="_blank" className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-blue-600 text-white hover:bg-blue-700">
-    <i className="fab fa-facebook-f"></i>
-  </a>
-  
-  <a href="https://twitter.com" target="_blank" className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-blue-400 text-white hover:bg-blue-500">
-    <i className="fab fa-twitter"></i>
-  </a>
-  
-  <a href="https://instagram.com" target="_blank" className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-pink-500 text-white hover:bg-pink-600">
-    <i className="fab fa-instagram"></i>
-  </a>
-  
-  <a href="https://linkedin.com" target="_blank" className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-blue-700 text-white hover:bg-blue-800">
-    <i className="fab fa-linkedin-in"></i>
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-blue-600 text-white hover:bg-blue-700"
+                >
+                  <i className="fab fa-facebook-f"></i>
                 </a>
-                
-  <a href="https://linkedin.com" target="_blank" className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-gray-700 text-white hover:bg-gray-800">
-    <i className="fab fa-github"></i>
-  </a>
-</div>
 
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-blue-400 text-white hover:bg-blue-500"
+                >
+                  <i className="fab fa-twitter"></i>
+                </a>
+
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-pink-500 text-white hover:bg-pink-600"
+                >
+                  <i className="fab fa-instagram"></i>
+                </a>
+
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-blue-700 text-white hover:bg-blue-800"
+                >
+                  <i className="fab fa-linkedin-in"></i>
+                </a>
+
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  className="flex items-center justify-center w-24 rounded-lg text-xl lg:text-2xl  h-[44px]  bg-gray-700 text-white hover:bg-gray-800"
+                >
+                  <i className="fab fa-github"></i>
+                </a>
+              </div>
             </div>
 
             <div className="card bg-base-100 w-full   shadow-2xl">
@@ -107,7 +126,6 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <h1>contact Page....</h1>
       </div>
     );
 };
