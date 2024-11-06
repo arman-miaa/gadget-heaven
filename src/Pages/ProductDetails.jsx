@@ -58,7 +58,11 @@ const addToWishlist = (product) => {
   } else {
     alert("This item is already in your wishlist.");
   }
-};
+  };
+  
+  useEffect(() => {
+    document.title = "Product Details";
+  }, []);
 
 
   return (

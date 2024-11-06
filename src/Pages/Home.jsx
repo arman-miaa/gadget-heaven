@@ -7,7 +7,7 @@ const Home = () => {
    const categories = useLoaderData();
   //  console.log(categories);
     return (
-      <div className="bg-[#F7F7F7]">
+      <div id="products" className="bg-[#F7F7F7]">
         <div className="bg-[#9538E2] relative  pb-32 text-white -mt-[48px] text-center rounded-b-xl">
           <h1 className="font-bold text-5xl ">
             Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories
@@ -17,9 +17,9 @@ const Home = () => {
             the next level. From smart devices to the coolest accessories, we
             have it all!
           </p>
-          <button className="btn rounded-2xl mb-6 text-[#9538E2]">
+          <a href="#products" className="btn rounded-2xl mb-6 text-[#9538E2]">
             Shop Now
-          </button>
+          </a>
 
           <Hero></Hero>
         </div>

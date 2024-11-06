@@ -37,7 +37,7 @@
     "id": 3,
     "title": "Apple Watch 7",
     "image": "https://i.ibb.co.com/QCFBCJZ/Watch-9-Ocean-Band-2-6490.jpg",
-    "category": "Smart Watches",
+    "category": "Smart_Watches",
     "price": 449,
     "description": "Stay fit and connected with the Samsung Galaxy Watch 5 Pro.",
     "specification": [
@@ -104,7 +104,7 @@
     "id": 7,
     "title": "Apple Watch 6",
     "image": "https://i.ibb.co.com/fNzRSjS/Apple-watch-series-6-stainless-steel-case-gmt-watchface-09152020-carousel-jpg-large.jpg",
-    "category": "Smart Watches",
+    "category": "Smart_Watches",
     "price": 399,
     "description": "Stay active and healthy with the Apple Watch Series 8.",
     "specification": [
@@ -171,7 +171,7 @@
     "id": 11,
     "title": "Fitbit Versa 4",
     "image": "https://i.ibb.co.com/B2rvpTP/61-Uicbb64-GL.jpg",
-    "category": "Smart Watches",
+    "category": "Smart_Watches",
     "price": 229,
     "description": "Track your fitness and health goals with the Fitbit Versa 4.",
     "specification": [

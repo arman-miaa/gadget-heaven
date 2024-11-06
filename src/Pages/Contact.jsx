@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="mb-16 w-full  -mt-28 sticky">
           <div className="border-2 w-3/4 mx-auto p-4 rounded-xl">
             <img
-              className=" w-full mx-auto rounded-2xl object-fill  text-center  h-[363px] "
+              className=" w-full mx-auto rounded-2xl object-cover  text-center  h-[363px] "
               src="/contact.jpg"
               alt=""
             />

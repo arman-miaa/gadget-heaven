@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
+
 
 const Navbar = () => {
   const location = useLocation();
@@ -31,6 +32,7 @@ const Navbar = () => {
       window.removeEventListener("wishUpdated", handleWishUpdate);
     };
   }, []);
+  
 
   return (
     <div
@@ -64,16 +66,16 @@ const Navbar = () => {
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
               <li className="text-white">
-                <Link to="/">Home</Link>
+                <NavLink to="/">Home</NavLink>
               </li>
               <li>
-                <Link to="/Statistics">Statistics</Link>
+                <NavLink to="/Statistics">Statistics</NavLink>
               </li>
               <li>
-                <Link to="/Dashboard">Dashboard</Link>
+                <NavLink to="/Dashboard">Dashboard</NavLink>
               </li>
               <li>
-                <Link to="/Contact">Contact</Link>
+                <NavLink to="/Contact">Contact</NavLink>
               </li>
             </ul>
           </div>
@@ -82,33 +84,35 @@ const Navbar = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
             <li>
-              <Link to="/">Home</Link>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <Link to="/Statistics">Statistics</Link>
+              <NavLink to="/Statistics">Statistics</NavLink>
             </li>
             <li>
-              <Link to="/Dashboard">Dashboard</Link>
+              <NavLink to="/Dashboard">Dashboard</NavLink>
             </li>
             <li>
-              <Link to="/Contact">Contact</Link>
+              <NavLink to="/Contact">Contact</NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end text-2xl gap-2">
-          <Link to="/dashboard" className="relative mr-2">
-            <i className="fa-solid fa-cart-arrow-down text-xl"></i>
-            <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full text-xs w-5 h-5 flex items-center justify-center">
+          <NavLink
+            to="/dashboard"
+            className="relative mr-2 bg-white rounded-full py-[4px] px-2"
+          >
+            <i className="fa-solid fa-cart-arrow-down text-xl text-black"></i>
+            <span className="absolute -top-2 -right-2 bg-white text-red-600 rounded-full text-xs w-5 h-5 flex items-center justify-center">
               {cartCount}
             </span>
-          </Link>
+          </NavLink>
 
-          <button className="relative">
-            <i className="fa-regular fa-heart text-xl"></i>
-            <span className="absolute -top-2 -right-2 bg-red-500 rounded-full text-xs w-5 h-5 flex items-center justify-center">
+          <button className="relative bg-white rounded-full py-[4px] px-2">
+            <i className="fa-regular fa-heart text-xl text-black"></i>
+            <span className="absolute -top-2 -right-2 bg-white text-red-600 rounded-full text-xs w-5 h-5 flex items-center justify-center">
               {wishCount}
             </span>
-            
           </button>
         </div>
       </div>
