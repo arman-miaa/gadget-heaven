@@ -22,7 +22,7 @@ const Carts = () => {
     },[category,data])
     
     return (
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 my12 flex-grow">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8  flex-grow">
         {carts.length === 0? <h3 className="text-center text-3xl text-red-300  mt-12">No Items Available </h3>: carts.map((cart,ind) => (
           <Cart key={ind} cart={cart}></Cart>
         ))}

@@ -6,7 +6,7 @@ const Cart = ({ cart }) => {
     const {title,image,price,id } = cart;
     return (
       <div>
-        <div className="card bg-base-100 p-4 shadow-xl">
+        <div className="card bg-base-100 p-4 ">
           <figure className=' h-[200px] '>
             <img className='w-full border-2 rounded-xl h-full object-contain overflow-hidden'
               src={image}

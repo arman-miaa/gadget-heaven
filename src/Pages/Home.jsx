@@ -2,6 +2,9 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import Hero from "../components/Hero";
 import Products from "../components/Products";
 import Categories from "../components/Categories";
+import { useEffect } from "react";
+
+
 
 const Home = () => {
    const categories = useLoaderData();
@@ -33,8 +36,8 @@ const Home = () => {
           </div>
         </div>
         {/* <Products></Products> */}
-        <h1>Home Page...</h1>
-        <div className="border-2 flex gap-12">
+        <h1 className="text-center text-4xl font-bold mb-12">Explore Cutting-Edge Gadgets</h1>
+        <div className=" flex gap-8">
           <div className="flex">
             <Categories categories={categories}></Categories>
           </div>

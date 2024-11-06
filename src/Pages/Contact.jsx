@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Hero from '../components/Hero';
+
+
 
 const Contact = () => {
     return (

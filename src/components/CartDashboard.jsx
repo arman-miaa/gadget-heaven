@@ -49,57 +49,78 @@ const CartDashboard = () => {
   };
 
   return (
-    <div>
-      <div className="flex justify-between border-2">
-        <h1>Cart Dashboard Page</h1>
-        <div className="flex">
-          <h2>
+    <div className="">
+      <div className="flex justify-between items-center w-9/12  bg-[#F7F7F7]">
+        <h1 className="text-2xl font-bold">Cart</h1>
+
+        <div className="flex  items-center gap-6">
+          <h2 className="text-2xl font-bold">
             Total Cost: <span>${totalPrice.toFixed(2)}</span>
           </h2>
-          <button
+
+          <div
             onClick={handleSortBtn}
-            className="text-[#9538E2] border-[1px] py-[4px] px-4 mt-4 rounded-full border-[#9538E2]"
+            className="text-[#9538E2] border-[1px] text-lg font-medium cursor-pointer flex py-[6px] px-4  gap-[5px] rounded-full border-[#9538E2]"
           >
             Sort by price
-          </button>
+            <img src="/Frame.png" alt="" />
+          </div>
+
           <button
             onClick={handlePurchase}
-            className={`text-[#9538E2] border-[1px] py-[4px] px-4 mt-4 rounded-full border-[#9538E2] ${
+            className={` border-[1px] text-white text-lg font-medium py-[6px] px-4 rounded-full border-[#9538E2] ${
               totalPrice === 0 ? "opacity-50 cursor-not-allowed" : ""
             }`}
+            style={{
+              background: "linear-gradient(90deg, #9538E2, #C256E3)",
+            }}
             disabled={totalPrice === 0}
           >
             Purchase
           </button>
         </div>
       </div>
-      {cart.map((cartItem) => {
-        const { title, image, price, id, description } = cartItem;
-        return (
-          <div
-            key={id}
-            className="card bg-base-100 p-4 flex flex-row shadow-xl"
-          >
-            <figure className="h-[200px]">
-              <img
-                className="w-full border-2 rounded-xl h-full object-contain overflow-hidden"
-                src={image}
-                alt="Product"
-              />
-            </figure>
-            <div>
-              <h2 className="text-2xl font-semibold mt-4">{title}</h2>
-              <p>{description}</p>
-              <p className="text-xl font-medium text-[#09080F99]">
-                Price: ${price}
-              </p>
-              <button onClick={() => handleRemove(id)} className="text-red-500">
-                Delete
-              </button>
+
+      <div className=" bg-[#F7F7F7]">
+        {cart.map((cartItem) => {
+          const { title, image, price, id, description } = cartItem;
+          return (
+            <div className=" bg-white border-2 mt-6 rounded-xl">
+              <div
+                key={id}
+                className="card border-red-900   p-4 flex flex-row justify-between items-center px-10 "
+              >
+                <div className="flex items-center gap-8">
+                  <figure className="h-[150px] w-[250px]">
+                    <img
+                      className="w-full border-2  rounded-2xl  h-full object-contain overflow-hidden"
+                      src={image}
+                      alt="Product"
+                    />
+                  </figure>
+                  <div className="space-y-[5px]">
+                    <h2 className="text-2xl font-semibold mt-4">{title}</h2>
+                    <p>{description}</p>
+                    <p className="text-xl font-medium text-[#09080F99]">
+                      Price: ${price}
+                    </p>
+                  </div>
+                </div>
+
+                {/* delete icon */}
+                <div className="border-2 border-red-500 cursor-pointer py-2 px-[12px] rounded-full">
+                  <div
+                    onClick={() => handleRemove(id)}
+                    className="text-red-500 "
+                  >
+                    <i class="fa-solid fa-x"></i>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
 
       {isModalOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">

@@ -11,7 +11,7 @@ const Categories = ({ categories }) => {
           to="/"
           className={({ isActive }) =>
             `mt-4 p-[10px] rounded-full text-lg font-medium ${
-              isActive ? "bg-[#9538E2]" : "bg-[#09080F0D]"
+              isActive ? "bg-[#9538E2] text-white" : "bg-[#09080F0D]"
             }`
           }
         >
@@ -23,7 +23,7 @@ const Categories = ({ categories }) => {
             key={category.id}
             className={({ isActive }) =>
               `mt-4 p-[10px] rounded-full text-lg font-medium ${
-                isActive ? "bg-[#9538E2]" : "bg-[#09080F0D]"
+                isActive ? "bg-[#9538E2] text-white" : "bg-[#09080F0D]"
               }`
             }
           >

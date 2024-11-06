@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-      <div className="bg-base-200 pt-16">
+      <div className="bg-base-200 pt-16 ">
         <div className="text-center">
           <h3 className="text-3xl font-bold">Gadget Heaven</h3>
           <p>Leading the way in cutting-edge technology and innovation.</p>

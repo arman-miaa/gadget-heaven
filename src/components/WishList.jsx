@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+ import { ToastContainer, toast } from "react-toastify";
+ import "react-toastify/dist/ReactToastify.css";
 
 const WishList = () => {
   const [wishList, setWishList] = useState([]);
@@ -32,7 +34,10 @@ const handleRemove = (id) => {
       const cartUpdatedEvent = new Event("cartUpdated");
       window.dispatchEvent(cartUpdatedEvent);
     } else {
-      alert("This item is already in your cart.");
+        toast.warn("This item is already in your cart.", {
+          position: "top-center",
+         
+        });
     }
   };
 
@@ -41,7 +46,7 @@ const handleRemove = (id) => {
 
   return (
     <div>
-      <h1> Wishlist Page</h1>
+      <h1 className="text-2xl font-bold"> Wishlist</h1>
 
       {wishList.map((cart) => {
         const { title, image, price, id, description } = cart;
@@ -50,7 +55,6 @@ const handleRemove = (id) => {
             key={id}
             className="card bg-base-100 p-4 flex flex-row shadow-xl"
           >
-            {/* Product image */}
             <figure className="h-[200px]">
               <img
                 className="w-full border-2 rounded-xl h-full object-contain overflow-hidden"
@@ -59,14 +63,12 @@ const handleRemove = (id) => {
               />
             </figure>
             <div>
-              {/* Product title and description */}
               <h2 className="text-2xl font-semibold mt-4">{title}</h2>
               <p>{description}</p>
               <p className="text-xl font-medium text-[#09080F99]">
                 Price: ${price}
               </p>
 
-              {/* Button to remove the item from the wishlist */}
               <button
                 onClick={() => handleRemove(id)}
                 className="bg-red-500 text-white rounded-full py-1 px-3 mt-2"
@@ -74,7 +76,6 @@ const handleRemove = (id) => {
                 Delete
               </button>
 
-              {/* Button to add the item to the cart */}
               <button
                 onClick={() => addToCart(cart)}
                 className="bg-blue-500 text-white rounded-full py-1 px-3 mt-2 ml-4"

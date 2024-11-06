@@ -1,6 +1,7 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import Hero from "../components/Hero";
 import { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 const ProductDetails = () => {
   const data = useLoaderData();
   // console.log(data);
@@ -17,7 +18,7 @@ const ProductDetails = () => {
   const { image, title, price, description, specification, rating } = product;
 
  useEffect(() => {
-   // Retrieve the existing cart from localStorage on initial load
+   
    const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
    setCart(existingCart);
 
@@ -33,11 +34,16 @@ const addToCart = (product) => {
     localStorage.setItem("cart", JSON.stringify(existingCart));
     setCart(existingCart);
 
-    // Dispatch custom event
+   
     const cartUpdatedEvent = new Event("cartUpdated");
     window.dispatchEvent(cartUpdatedEvent);
+     toast.success(` ${title} added in your cart.`, {
+       position: "top-center",
+     });
   } else {
-    alert("This item is already in your cart.");
+    toast.warn(` ${title} already added in your cart.`, {
+      position: "top-center",
+    });
   }
 };
 
@@ -52,11 +58,16 @@ const addToWishlist = (product) => {
     localStorage.setItem("wish", JSON.stringify(updatedWishlist));
     setWishList(updatedWishlist);
 
-    // Dispatch custom event
+     toast.success(` ${title} added in your cart.`, {
+       position: "top-center",
+     });
+
     const wishUpdatedEvent = new Event("wishUpdated");
     window.dispatchEvent(wishUpdatedEvent);
   } else {
-    alert("This item is already in your wishlist.");
+     toast.warn(` ${title} already added in your cart.`, {
+       position: "top-center",
+     });
   }
   };
   
@@ -67,7 +78,7 @@ const addToWishlist = (product) => {
 
   return (
     <div>
-      <div className="bg-[#9538E2] relative  pb-32 text-white -mt-[48px] text-center ">
+      <div className="bg-[#9538E2] rounded-xl relative  pb-32 text-white -mt-[48px] text-center ">
         <h1 className="font-bold text-5xl pt-8 ">Product Details</h1>
         <p className="my-6">
           Explore the latest gadgets that will take your experience to <br />{" "}
@@ -78,46 +89,47 @@ const addToWishlist = (product) => {
         <Hero></Hero>
       </div>
       <div className="mb-16 w-full   -mt-28 sticky">
-        <div className="border-2 bg-white w-3/4 mx-auto p-4 rounded-xl flex   gap-2">
-          <div className="border-2 w-[300px]">
+        <div className="border-2 bg-white w-3/4 mx-auto p-4 rounded-xl flex   gap-6">
+          <div className="border-2 rounded-xl w-[300px]">
             <img src={image} alt="" />
           </div>
 
-          <div className="border-2">
-            <h3>{title}</h3>
-            <p>Price:${price}</p>
-            <button>
-              <strong>In Stock</strong>:{product?.availability ? "Yes" : "No"}
+          <div className="space-y-3">
+            <h3 className="text-3xl font-semibold">{title}</h3>
+            <p className="text-xl font-semibold">Price:${price}</p>
+            <button className="bg-[#309C081A] border-2 border-green-400 p-[4px] px-2 rounded-full">
+              <span className={product?.availability ? "text-green-500 px-4" : "text-red-500"}>
+  {product?.availability ? "In Stock" : "No"}
+</span>
+
             </button>
-            <p>{description}</p>
-            <h3 className="font-bold">Specification:</h3>
-            <ul>
+            <p className="text-xl text-[#09080F99]">{description}</p>
+            <h3 className="text-xl font-bold">Specification:</h3>
+            <ul className="text-[#09080F99] text-lg space-y-[4px]">
               {specification?.map((item, ind) => (
                 <li key={ind}>
-                  {ind + 1} {item}
+                  {ind + 1}. {item}
                 </li>
               ))}
             </ul>
-            <p>Rating : {rating}⭐ </p>
+            <p className="font-bold text-xl">Rating : {rating}⭐ </p>
             <div className=" w-full flex justify-start items-center gap-4  py-1">
-            
               <button
-                className="bg-[#9538E2] md:w-max rounded-full py-1 px-3 text-[white]"
+                className="bg-[#9538E2] md:w-max font-bold text-lg rounded-full py-[6px] px-4 text-[white]"
                 onClick={() => addToCart(product)}
               >
                 Add To Card{" "}
-                <i className="fa-solid fa-cart-arrow-down ml-[4px]"></i>
+                <i className="fa-solid fa-cart-arrow-down ml-[4px] "></i>
               </button>
 
               <button onClick={() => addToWishlist(product)}>
                 {" "}
-                <i className="fa-regular fa-heart text-xl"></i>
+                <i className="fa-regular fa-heart text-2xl border-2 py-2 px-[10px] rounded-full"></i>
               </button>
             </div>
           </div>
         </div>
       </div>
-      <h1>Product Details Page...</h1>
     </div>
   );
 };
