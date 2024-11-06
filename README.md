@@ -39,7 +39,5 @@ Gadget Heaven is an e-commerce platform built with React where users can explore
 ## Requirement Document Link 📄
 - Requirement Document Link: 👉 [https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-arman-miaa/blob/main/public/Batch-10_Assignment-08.pdf](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-arman-miaa/blob/main/public/Batch-10_Assignment-08.pdf)
 
-## Requirement Document Link 📄
-- [Requirement Document](https://github.com/username/repository-name/raw/main/Batch-10_Assignment-08.pdf)
 
 
