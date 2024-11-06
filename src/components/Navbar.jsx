@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <div
       className={`${
-        location.pathname === "/"
+        location.pathname === "/" || location.pathname.startsWith("/category/")
           ? "bg-[#9538E2] rounded-t-xl px-6 text-white"
           : "bg-white"
       }`}

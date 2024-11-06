@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 
 const Carts = () => {
     const data = useLoaderData();
-    console.log(data);
     const {category} = useParams();
     // console.log(category);
     const [carts, useCarts] = useState([data]);
