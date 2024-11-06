@@ -19,20 +19,29 @@ const CartDashboard = () => {
     setCart(sortedCart);
   };
 
-  const handleRemove = (id) => {
-    const updatedCart = cart.filter((item) => item.id !== id);
-    localStorage.setItem("cart", JSON.stringify(updatedCart));
-    setCart(updatedCart);
-    const total = updatedCart.reduce((acc, item) => acc + item.price, 0);
-    setTotalPrice(total);
-  };
+ const handleRemove = (id) => {
+   const updatedCart = cart.filter((item) => item.id !== id);
+   localStorage.setItem("cart", JSON.stringify(updatedCart));
+   setCart(updatedCart);
+   const total = updatedCart.reduce((acc, item) => acc + item.price, 0);
+   setTotalPrice(total);
 
-  const handlePurchase = () => {
-    setIsModalOpen(true);
-    localStorage.setItem("cart", JSON.stringify([]));
-    setCart([]);
-    setTotalPrice(0);
-  };
+   // Dispatch custom event to notify Navbar about the update
+   const cartUpdatedEvent = new Event("cartUpdated");
+   window.dispatchEvent(cartUpdatedEvent);
+ };
+
+ const handlePurchase = () => {
+   setIsModalOpen(true);
+   localStorage.setItem("cart", JSON.stringify([]));
+   setCart([]);
+   setTotalPrice(0);
+
+   // Dispatch custom event to notify Navbar about the update
+   const cartUpdatedEvent = new Event("cartUpdated");
+   window.dispatchEvent(cartUpdatedEvent);
+ };
+
 
   const closeModal = () => {
     setIsModalOpen(false);
