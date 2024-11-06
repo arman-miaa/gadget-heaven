@@ -54,7 +54,7 @@ toast.warning(' removed this product from your cart.', {
   return (
     <div className="">
       <div className="flex justify-between items-center w-9/12  bg-[#F7F7F7]">
-        <h1 className="text-2xl font-bold">Cart</h1>
+        <h1 className="text-2xl font-bold ml-10">Cart</h1>
 
         <div className="flex  items-center gap-6">
           <h2 className="text-2xl font-bold">
@@ -88,7 +88,7 @@ toast.warning(' removed this product from your cart.', {
         {cart.map((cartItem) => {
           const { title, image, price, id, description } = cartItem;
           return (
-            <div className=" bg-white border-2 mt-6 rounded-xl">
+            <div className=" bg-white border-2 mx-8 mt-6 rounded-xl">
               <div
                 key={cartItem.id}
                 className="card border-red-900   p-4 flex flex-row justify-between items-center px-10 "
