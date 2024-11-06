@@ -4,6 +4,10 @@ import Hero from '../components/Hero';
 
 
 const Contact = () => {
+   useEffect(() => {
+     document.title = "Contact Page";
+   }, []);
+
     return (
       <div>
         <div className="bg-[#9538E2] relative pt-12 pb-32 text-white  text-center -mt-8 rounded-xl">

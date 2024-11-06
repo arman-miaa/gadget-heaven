@@ -20,7 +20,10 @@ const Home = () => {
             the next level. From smart devices to the coolest accessories, we
             have it all!
           </p>
-          <a href="#products" className="btn rounded-2xl mb-6 text-[#9538E2]">
+          <a
+            href="#my"
+            className="btn rounded-full text-xl font-bold px-6 mb-6 text-[#9538E2]"
+          >
             Shop Now
           </a>
 
@@ -36,7 +39,9 @@ const Home = () => {
           </div>
         </div>
         {/* <Products></Products> */}
-        <h1 className="text-center text-4xl font-bold mb-12">Explore Cutting-Edge Gadgets</h1>
+        <h1 id="my" className="text-center text-4xl font-bold mb-12">
+          Explore Cutting-Edge Gadgets
+        </h1>
         <div className=" flex gap-8 mx-8">
           <div className="flex">
             <Categories categories={categories}></Categories>

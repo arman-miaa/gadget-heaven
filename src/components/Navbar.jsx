@@ -38,11 +38,11 @@ const Navbar = () => {
     <div
       className={`${
         location.pathname === "/" || location.pathname.startsWith("/category/")
-          ? "bg-[#9538E2] rounded-t-xl px-6 text-white"
+          ? "bg-[#9538E2] rounded-t-xl px-8 py-2 mt-4 text-white"
           : "bg-white"
       }`}
     >
-      <div className="navbar mt-8">
+      <div className="navbar mt-4">
         <div className="navbar-start">
           <div className="dropdown">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -65,7 +65,7 @@ const Navbar = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
             >
-              <li className="text-white">
+              <li className="font-bold">
                 <NavLink to="/">Home</NavLink>
               </li>
               <li>
@@ -82,7 +82,7 @@ const Navbar = () => {
           <a className="btn btn-ghost text-xl">Gadget Heaven</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 font-bold md:text-xl">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
