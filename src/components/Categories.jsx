@@ -5,7 +5,7 @@ const Categories = ({ categories }) => {
   console.log(categories);
   return (
     <div className="">
-      <div className="flex flex-col bg-white p-4 w-[220px]">
+      <div className="flex flex-col bg-white rounded-xl p-4 w-[220px]">
         <Link></Link>
         <NavLink
           to="/"

@@ -10,7 +10,7 @@ const Home = () => {
    const categories = useLoaderData();
   //  console.log(categories);
     return (
-      <div id="products" className="bg-[#F7F7F7]">
+      <div id="products" className="bg-[#F7F7F7] pb-16 rounded-xl">
         <div className="bg-[#9538E2] relative  pb-32 text-white -mt-[48px] text-center rounded-b-xl">
           <h1 className="font-bold text-5xl ">
             Upgrade Your Tech Accessorize with <br /> Gadget Heaven Accessories
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         {/* <Products></Products> */}
         <h1 className="text-center text-4xl font-bold mb-12">Explore Cutting-Edge Gadgets</h1>
-        <div className=" flex gap-8">
+        <div className=" flex gap-8 mx-8">
           <div className="flex">
             <Categories categories={categories}></Categories>
           </div>
