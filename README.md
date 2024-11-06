@@ -21,7 +21,7 @@ Gadget Heaven is an e-commerce platform built with React where users can explore
   
 ## Data Handling and Management: 📦
 - **Local Storage**: Used for persisting the user's cart and wishlist data so that the data remains even after a page reload or session change.
-- **Context API**: For future improvements, the app can use React's Context API for better state management across multiple components.
+
 
 ## 5 Features of the Website/Project: ⚙️
 - 🛒 **Cart System**: Add products to your cart, manage quantities, and proceed to checkout.
