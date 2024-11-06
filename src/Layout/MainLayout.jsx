@@ -2,10 +2,13 @@ import { Outlet } from "react-router-dom";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
+// import { CartProvider } from "../components/CartContext";
+// import { CartProvider } from "../components/CartContext";
 
 const MainLayout = () => {
     return (
       <div>
+       
         {/* Navbar */}
         <div className="container mx-auto">
                 <Navbar></Navbar>

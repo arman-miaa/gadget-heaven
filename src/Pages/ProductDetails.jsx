@@ -24,43 +24,42 @@ const ProductDetails = () => {
    const existingWish = JSON.parse(localStorage.getItem("wish")) || [];
    setWishList(existingWish);
  }, []);
+const addToCart = (product) => {
+  const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
+  const isProductInCart = existingCart.some((item) => item.id === product.id);
 
- const addToCart = (product) => {
-   // Add the new product to the cart state
-   const updatedCart = [...cart, product];
-   setCart(updatedCart);
+  if (!isProductInCart) {
+    existingCart.push(product);
+    localStorage.setItem("cart", JSON.stringify(existingCart));
+    setCart(existingCart);
 
-   // Update localStorage with the new cart array
-   localStorage.setItem("cart", JSON.stringify(updatedCart));
+    // Dispatch custom event
+    const cartUpdatedEvent = new Event("cartUpdated");
+    window.dispatchEvent(cartUpdatedEvent);
+  } else {
+    alert("This item is already in your cart.");
+  }
+};
 
-   // Debugging: Log the updated cart
-   console.log("Product added to cart:", product);
-   console.log("Updated cart:", updatedCart);
-   window.location.reload();
- };
+const addToWishlist = (product) => {
+  const existingWish = JSON.parse(localStorage.getItem("wish")) || [];
+  const isProductInWishlist = existingWish.some(
+    (item) => item.id === product.id
+  );
 
+  if (!isProductInWishlist) {
+    const updatedWishlist = [...existingWish, product];
+    localStorage.setItem("wish", JSON.stringify(updatedWishlist));
+    setWishList(updatedWishlist);
 
-  
- const addToWishlist = (product) => {
-   // Retrieve existing wishlist items
-   const existingWish = JSON.parse(localStorage.getItem("wish")) || [];
+    // Dispatch custom event
+    const wishUpdatedEvent = new Event("wishUpdated");
+    window.dispatchEvent(wishUpdatedEvent);
+  } else {
+    alert("This item is already in your wishlist.");
+  }
+};
 
-   // Check if the product is already in the wishlist
-   const isProductInWishlist = existingWish.some(
-     (item) => item.id === product.id
-   );
-
-   if (!isProductInWishlist) {
-     // If the product is not already in the wishlist, add it
-     const updatedWishlist = [...existingWish, product];
-     localStorage.setItem("wish", JSON.stringify(updatedWishlist));
-     setWishList(updatedWishlist);
-   } else {
-     // Notify the user that the item is already in the wishlist
-     console.log("This item is already in your wishlist.");
-     alert("This item is already in your wishlist.");
-   }
- };
 
   return (
     <div>
