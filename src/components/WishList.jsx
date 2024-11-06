@@ -54,10 +54,10 @@ const handleRemove = (id) => {
       {wishList.map((cart) => {
         const { title, image, price, id, description } = cart;
         return (
-          <div className="">
+          <div className="border-2 mt-8 bg-white flex justify-between items-center mx-8 px-6 rounded-xl">
             <div
               key={id}
-              className="card  p-4 flex bg-[#F7F7F7] items-center gap-8 flex-row border-2 mt-6 mx-8"
+              className="card  p-4 flex  items-center gap-8 flex-row  "
             >
               <figure className="h-[150px] w-[250px]">
                 <img
@@ -79,6 +79,12 @@ const handleRemove = (id) => {
                 >
                   Add to Cart
                 </button>
+              </div>
+            </div>
+
+            <div className="border-2 border-red-500 cursor-pointer py-2 px-[12px] rounded-full">
+              <div onClick={() => handleRemove(id)} className="text-red-500 ">
+                <i class="fa-solid fa-x"></i>
               </div>
             </div>
           </div>
