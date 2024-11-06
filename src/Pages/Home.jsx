@@ -1,4 +1,4 @@
-import { Outlet, useLoaderData } from "react-router-dom";
+import { Link, Outlet, useLoaderData } from "react-router-dom";
 import Hero from "../components/Hero";
 import Products from "../components/Products";
 import Categories from "../components/Categories";
@@ -7,7 +7,10 @@ import { useEffect } from "react";
 
 
 const Home = () => {
-   const categories = useLoaderData();
+  const categories = useLoaderData();
+  useEffect(() => {
+    document.title = "Home Page";
+  }, []);
   //  console.log(categories);
     return (
       <div id="products" className="bg-[#F7F7F7] pb-16 rounded-xl">
@@ -20,12 +23,12 @@ const Home = () => {
             the next level. From smart devices to the coolest accessories, we
             have it all!
           </p>
-          <a
-            href="#my"
+          <Link
+            to="/dashboard"
             className="btn rounded-full text-xl font-bold px-6 mb-6 text-[#9538E2]"
           >
             Shop Now
-          </a>
+          </Link>
 
           <Hero></Hero>
         </div>

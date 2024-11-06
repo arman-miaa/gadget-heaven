@@ -23,6 +23,7 @@ const handleRemove = (id) => {
 
 
   const addToCart = (product) => {
+    const { title } = product;
     const existingCart = JSON.parse(localStorage.getItem("cart")) || [];
 
     const isProductInCart = existingCart.some((item) => item.id === product.id);
@@ -31,12 +32,14 @@ const handleRemove = (id) => {
       existingCart.push(product);
       localStorage.setItem("cart", JSON.stringify(existingCart));
 
+       toast.success(` ${title} added in your cart.`, {
+         position: "top-center",
+       });
       const cartUpdatedEvent = new Event("cartUpdated");
       window.dispatchEvent(cartUpdatedEvent);
     } else {
-        toast.warn("This item is already in your cart.", {
+        toast.warn(` ${title} already added in your cart.`, {
           position: "top-center",
-         
         });
     }
   };

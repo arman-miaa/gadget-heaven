@@ -12,7 +12,7 @@ const Dashboard = () => {
    }, []);
 
     return (
-      <div className="bg-[#F7F7F7] pb-8">
+      <div id="dashboard" className="bg-[#F7F7F7] pb-8">
         <div className="bg-[#9538E2] mb-10 relative py-6 rounded-xl   text-white -mt-[48px] text-center ">
           <h1 className="font-bold text-5xl ">Dashboard</h1>
           <p className="my-6 md:w-1/2 mx-auto">

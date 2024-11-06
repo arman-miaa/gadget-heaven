@@ -58,14 +58,14 @@ const addToWishlist = (product) => {
     localStorage.setItem("wish", JSON.stringify(updatedWishlist));
     setWishList(updatedWishlist);
 
-     toast.success(` ${title} added in your cart.`, {
+     toast.success(` ${title} added in your wishlist.`, {
        position: "top-center",
      });
 
     const wishUpdatedEvent = new Event("wishUpdated");
     window.dispatchEvent(wishUpdatedEvent);
   } else {
-     toast.warn(` ${title} already added in your cart.`, {
+     toast.warn(` ${title} already added in your wishlist.`, {
        position: "top-center",
      });
   }

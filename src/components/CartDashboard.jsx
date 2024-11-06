@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const CartDashboard = () => {
   const [cart, setCart] = useState([]);
@@ -26,7 +27,9 @@ const CartDashboard = () => {
     setCart(updatedCart);
     const total = updatedCart.reduce((acc, item) => acc + item.price, 0);
     setTotalPrice(total);
-
+toast.warning(' removed this product from your cart.', {
+  position: "top-center",
+});
     const cartUpdatedEvent = new Event("cartUpdated");
     window.dispatchEvent(cartUpdatedEvent);
   };
@@ -87,7 +90,7 @@ const CartDashboard = () => {
           return (
             <div className=" bg-white border-2 mt-6 rounded-xl">
               <div
-                key={id}
+                key={cartItem.id}
                 className="card border-red-900   p-4 flex flex-row justify-between items-center px-10 "
               >
                 <div className="flex items-center gap-8">
