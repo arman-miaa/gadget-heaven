@@ -4,9 +4,7 @@ import { useEffect, useState } from "react";
 import { toast } from "react-toastify";
 const ProductDetails = () => {
   const data = useLoaderData();
-  // console.log(data);
   const { detail } = useParams();
-  // console.log(detail);
   const [product, setProduct] = useState({});
   const [cart, setCart] = useState([]);
   const [wishList,setWishList] =useState([])

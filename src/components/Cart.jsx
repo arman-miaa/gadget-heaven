@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Cart = ({ cart }) => {
-    // console.log(cart);
     const {title,image,price,id } = cart;
     return (
       <div>

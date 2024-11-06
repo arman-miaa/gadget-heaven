@@ -25,10 +25,11 @@ const Navbar = () => {
     };
 
     window.addEventListener("cartUpdated", handleCartUpdate);
-    window.addEventListener("wishUpdated", handleWishUpdate);
+
+        window.addEventListener("wishUpdated", handleWishUpdate);
 
     return () => {
-      window.removeEventListener("cartUpdated", handleCartUpdate);
+             window.removeEventListener("cartUpdated", handleCartUpdate);
       window.removeEventListener("wishUpdated", handleWishUpdate);
     };
   }, []);

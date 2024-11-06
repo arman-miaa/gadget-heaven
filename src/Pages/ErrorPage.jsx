@@ -1,9 +1,7 @@
 import { Link } from "react-router-dom";
 
 const ErrorPage = () => {
-  // useEffect(() => {
-  //   document.title = "Error Page";
-  // }, []);
+ 
     return (
       <>
         <div className="text-center flex flex-col justify-center items-center h-screen">

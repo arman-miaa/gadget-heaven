@@ -11,7 +11,6 @@ const Home = () => {
   useEffect(() => {
     document.title = "Home Page";
   }, []);
-  //  console.log(categories);
     return (
       <div id="products" className="bg-[#F7F7F7] pb-16 rounded-xl">
         <div className="bg-[#9538E2] relative  pb-32 text-white -mt-[48px] text-center rounded-b-xl">

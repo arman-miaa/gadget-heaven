@@ -1,4 +1,3 @@
-// import { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router-dom";
 import Cart from "./Cart";
 import { useEffect, useState } from "react";
@@ -6,7 +5,6 @@ import { useEffect, useState } from "react";
 const Carts = () => {
     const data = useLoaderData();
     const {category} = useParams();
-    // console.log(category);
     const [carts, useCarts] = useState([data]);
     
 
