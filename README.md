@@ -31,13 +31,12 @@ Gadget Heaven is an e-commerce platform built with React where users can explore
 - 🔔 **Toast Notifications**: Notifications are displayed to inform the user when actions are taken, like adding an item to the cart or wishlist.
 
 ## Live Link 🌐
-- Netlify Live Link: 👉 [https://ph-a8-gadget-heaven.netlify.app/](https://ph-a8-gadget-heaven.netlify.app/)
+- Netlify Live Link: 👉 [https://gadget-heaven37.netlify.app](https://gadget-heaven37.netlify.app)
 
 
 
 
-## Requirement Document Link 📄
-- Requirement Document Link: 👉 [https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-arman-miaa/blob/main/public/Batch-10_Assignment-08.pdf](https://github.com/programming-hero-web-course-4/b10a8-gadget-heaven-arman-miaa/blob/main/public/Batch-10_Assignment-08.pdf)
+
 
 
 
